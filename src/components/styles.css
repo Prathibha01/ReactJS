@@ -1,0 +1,80 @@
+/* / styles.css / */
+body {
+  background-color:white; 
+}
+
+body, html {
+  margin: 5px;
+  padding: 5px;
+}
+
+.main-container {
+  margin-top: 20px; 
+  margin-left: 270px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.content {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.logo {
+  width: 200px; /* Adjust the width as needed */
+  height: 100px; /* Maintain the aspect ratio */
+}
+
+.logo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px; 
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.title-container {
+  top: 0;
+  left: 10%; /* Center the title horizontally */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+  color: rgb(0, 119, 255);
+  font-size: 56px; 
+  font-style:normal;
+ 
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  padding-top: 20px;
+ 
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 23px;
+  color: rgb(0, 179, 255);
+  display: block;
+  margin-top: 120px;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
