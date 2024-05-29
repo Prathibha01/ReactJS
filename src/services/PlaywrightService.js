@@ -4,14 +4,14 @@ class PlaywrightService {
       this.baseUrl = baseUrl;
     }
   
-    executePlaywrightScript = async (selectedScript) => {
+    executePlaywrightScript = async (payload) => {
       try {
         const response = await fetch(`${this.baseUrl}/execute-playwright-script`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ selectedScript }),
+          body: JSON.stringify(payload),
         });
   
         if (response.ok) {
@@ -48,7 +48,7 @@ class PlaywrightService {
         const response = await fetch(url, {
           method: 'POST',
         });
-  
+  console.log("hey", response); 
         if (response.ok) {
           return await response.json();
         } else {
